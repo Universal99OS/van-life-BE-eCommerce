@@ -10,7 +10,12 @@ import lombok.ToString;
 @Data
 @ToString
 public class Userdto {
+    private Long userIdNum;
     private String userName;
     private String email;
     private String password;
+
+    public Long getUserIdNum(){
+        return userIdNum;
+    }
 }
